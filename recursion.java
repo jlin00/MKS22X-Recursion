@@ -9,6 +9,7 @@ public class recursion{
 
     */
     public static double sqrt(double n, double tolerance){
+      if (n == 0) return 0;
       return sqrtHelper(n, tolerance, 1);
     }
 
@@ -30,6 +31,18 @@ public class recursion{
     public static ArrayList<Integer> makeAllSums(){
       ArrayList<Integer> sum = new ArrayList<Integer>();
       return sum;
+    }
+
+    public static void main(String[] args) {
+      //testing sqrt function
+
+      System.out.println(sqrt(100,.001)); //return 10
+      System.out.println(sqrt(10,.001)); //return 3.162
+      System.out.println(sqrt(2,.001)); //return 1.414
+      System.out.println(sqrt(35,.001)); //return 5.92
+      System.out.println(sqrt(36,.001)); //return 6
+      System.out.println(sqrt(4.5,.001)); //return 2.121
+      System.out.println(sqrt(0,.001)); //return 0
     }
 
 }
