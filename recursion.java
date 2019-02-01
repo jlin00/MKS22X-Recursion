@@ -25,7 +25,7 @@ public class recursion{
      *precondition: n is non-negative
      */
     public static int fib(int n){
-      return 0;
+      return fibHelper(n,0,1);
     }
 
     //tail recursion helper method for fib
