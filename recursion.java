@@ -43,7 +43,7 @@ public class recursion{
 
     public static void main(String[] args) {
 
-      //testing sqrt function
+      System.out.println("Testing sqrt function\n");
       System.out.println(sqrt(100,.001)); //return 10
       System.out.println(sqrt(10,.001)); //return 3.162
       System.out.println(sqrt(2,.001)); //return 1.414
@@ -52,7 +52,22 @@ public class recursion{
       System.out.println(sqrt(4.5,.001)); //return 2.121
       System.out.println(sqrt(0,.001)); //return 0
 
-      //testing fib function
+      System.out.println("--------------------------------");
+
+      System.out.println("Testing fib function\n");
+      System.out.println(fib(0)); //return 0
+      System.out.println(fib(1)); //return 1
+      System.out.println(fib(2)); //return 1
+      System.out.println(fib(3)); //return 2
+      System.out.println(fib(4)); //return 3
+      System.out.println(fib(5)); //return 5
+      System.out.println(fib(6)); //return 8
+      System.out.println(fib(10)); //return 55
+      System.out.println(fib(25)); //return 75025
+
+      System.out.println("--------------------------------");
+
+      
 
     }
 
