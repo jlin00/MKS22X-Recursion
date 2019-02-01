@@ -38,11 +38,11 @@ public class recursion{
     /*As Per classwork*/
     public static ArrayList<Integer> makeAllSums(int n){
       ArrayList<Integer> sum = new ArrayList<Integer>();
+      sumHelper(n, 0, sum);
       return sum;
     }
 
-    public static ArrayList<Integer> sumHelper(int n, int currentSum, ArrayList<Integer> sum){
-      return sum;
+    public static void sumHelper(int n, int currentSum, ArrayList<Integer> sum){
     }
 
     public static void main(String[] args) {
