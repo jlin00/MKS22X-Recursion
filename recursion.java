@@ -43,6 +43,11 @@ public class recursion{
     }
 
     public static void sumHelper(int n, int currentSum, ArrayList<Integer> sum){
+      if (n == 0) sum.add(currentSum);
+      else{
+        sumHelper(n - 1, currentSum, sum);
+        sumHelper(n - 1, currentSum + n, sum);
+      }
     }
 
     public static void main(String[] args) {
