@@ -36,8 +36,12 @@ public class recursion{
     }
 
     /*As Per classwork*/
-    public static ArrayList<Integer> makeAllSums(){
+    public static ArrayList<Integer> makeAllSums(int n){
       ArrayList<Integer> sum = new ArrayList<Integer>();
+      return sum;
+    }
+
+    public static ArrayList<Integer> sumHelper(int n, int currentSum, ArrayList<Integer> sum){
       return sum;
     }
 
@@ -67,7 +71,7 @@ public class recursion{
 
       System.out.println("--------------------------------");
 
-      
+
 
     }
 
