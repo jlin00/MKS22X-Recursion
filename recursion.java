@@ -19,12 +19,20 @@ public class recursion{
       return sqrtHelper(n, tolerance, (n / guess + guess) / 2);
     }
 
+
     /*Recursively find the n'th fibbonaci number in linear time
      *fib(0) = 1; fib(1) = 1; fib(5) = 5
      *precondition: n is non-negative
      */
     public static int fib(int n){
       return 0;
+    }
+
+    //tail recursion helper method for fib
+    public static int fibHelper(int n, int x, int y){
+      if (n == 0) return 0;
+      if (n == 1) return y;
+      return fibHelper(n - 1, y, y+x);
     }
 
     /*As Per classwork*/
@@ -34,8 +42,8 @@ public class recursion{
     }
 
     public static void main(String[] args) {
-      //testing sqrt function
 
+      //testing sqrt function
       System.out.println(sqrt(100,.001)); //return 10
       System.out.println(sqrt(10,.001)); //return 3.162
       System.out.println(sqrt(2,.001)); //return 1.414
@@ -43,6 +51,9 @@ public class recursion{
       System.out.println(sqrt(36,.001)); //return 6
       System.out.println(sqrt(4.5,.001)); //return 2.121
       System.out.println(sqrt(0,.001)); //return 0
+
+      //testing fib function
+
     }
 
 }
