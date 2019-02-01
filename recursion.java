@@ -9,7 +9,13 @@ public class recursion{
 
     */
     public static double sqrt(double n, double tolerance){
-      return 0;
+      return sqrtHelper(n, tolerance, 1);
+    }
+
+    //helper function that uses guess as a parameter
+    public static double sqrtHelper(double n, double tolerance, double guess){
+      if (Math.abs((guess * guess - n)/n * 100) < tolerance) return guess;
+      return sqrtHelper(n, tolerance, (n / guess + guess) / 2);
     }
 
     /*Recursively find the n'th fibbonaci number in linear time
